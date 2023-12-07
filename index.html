@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Zoom-redesign</title>
+  </head>
+  <body class="flex flex-col items-center">
+    <header class="w-full px-4 py-3 flex justify-center">
+      <div class="max-w-4xl w-full">
+        <div class="flex items-center justify-between relative">
+          <img src="/images/Zoom_logo.svg" alt="Zoom-logo" />
+          <!--only for small screens -->
+          <button type="button" class="text-blue-600 absolute right-0">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              class="md:hidden w-12 h-12 fill-current"
+            >
+              <g
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+              >
+                <path d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+              </g>
+            </svg>
+          </button>
+          <!--only for larger screens -->
+          <div class="invisible md:visible flex justify-between">
+            <nav>
+              <ul class="flex gap-6">
+                <li>Products</li>
+                <li>Solutions</li>
+                <li>Resources</li>
+                <li>Plans & Pricing</li>
+              </ul>
+            </nav>
+
+            <div class="pl-6">
+              <a
+                class="bg-blue-300 opacity-75 py-2 px-4 rounded text-black font-bold"
+                href="#"
+                >Contact sales</a
+              >
+              <a
+                class="bg-blue-600 opacity-75 py-2 px-4 rounded text-black font-bold"
+                href="#"
+                >Sign up free</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--hero section -->
+
+    <section class="py-20 md:py-40 px-[20%] flex flex-col items-center">
+      <h1 class="text-5xl pb-5">
+        AI that makes you more
+        <span class="border-b-4 border-[#01FF91]"> effective</span>
+      </h1>
+      <p class="pb-10">
+        Zoom AI Companion is your trusted digital assistant that empowers you.
+      </p>
+
+      <a
+        class="bg-blue-600 py-2 px-4 rounded-full text-white font-bold shadow-md"
+        href="#"
+        >Plans & Pricing</a
+      >
+    </section>
+
+    <section
+      class="flex flex-col items-center bg-black w-screen text-white py-16 px-20"
+    >
+      <img
+        class="w-80 pb-6"
+        src="images/zoom-ex-wheel.png"
+        alt="zoom-wheel of services"
+      />
+      <div class="flex pb-10">
+        <a class="bg-blue-600 py-2 px-4 mr-4 rounded-full text-white" href="#"
+          >Employee Experience</a
+        >
+        <a class="bg-blue-600 py-2 px-4 ml-4 rounded-full text-white" href="#"
+          >Customer Experience</a
+        >
+      </div>
+      <div class="flex flex-col">
+        <h2 class="text-2xl pb-6">Make work less work</h2>
+        <p class="pb-3">
+          Connect, collaborate, and create with Zoom's AI powered platform.
+          Empower your employees, teams, and customers to work better together
+          and get more done.
+        </p>
+        <a class="font-bold" href="#">Learn about Zoom AI</a>
+      </div>
+    </section>
+    <section
+      class="w-screen flex flex-col items-center bg-blue-600 text-white py-16 px-20"
+    >
+      <h2 class="text-2xl pb-8">Ready to get started?</h2>
+      <div class="flex">
+        <a
+          class="bg-[#01FF91] py-2 px-4 mr-4 rounded-full text-black font-bold shadow-md"
+          href="#"
+          >Sign up, it's free</a
+        >
+        <a
+          class="border-2 border-[#01FF91] py-2 px-4 ml-4 rounded-full text-white shadow-md"
+          href="#"
+          >Plans & Pricing</a
+        >
+      </div>
+    </section>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
